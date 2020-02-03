@@ -1,0 +1,245 @@
+@import url(reset.css);
+@import url(bootstrap.css);
+@import url(datepicker.css);
+@import url(fontawesome.css);
+@import url(select2.min.css);
+/*Responsive DataTable CSS*/
+@import url(dataTables.bootstrap.min.css);
+@import url(responsive.bootstrap.min.css);
+@import url('font.css');
+*{outline:none;}
+html, body {margin:0; padding:0; width:100%; height:100%;}
+body{margin:0; color:#333333 !important; font:14px/18px 'K2D', sans-serif !important; background:#d6d6d6 url(../images/background.svg) bottom right no-repeat fixed; background-size:30%; }
+a{color:#333333}
+a:hover{text-decoration:none;}
+.clearfix:after,.clearfix:before{content:''; display:table;}
+.clearfix:after{clear:both; display:block;}
+h1{font-size:20px; margin:0;  padding:1em 0 .5em; color:#003a70; margin-bottom:.5em;}
+/*HEADER CSS*/
+.unique-id{color:#fff; border-left:4px solid #feb803; text-align:right; background: #00c0f3;padding:4px 10px 3px; background: -moz-linear-gradient(left,  #00c0f3 0%, #472585 100%);background: -webkit-linear-gradient(left,  #00c0f3 0%,#472585 100%);background: linear-gradient(to right,  #00c0f3 0%,#472585 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0f3', endColorstr='#472585',GradientType=1 );}
+.first-word{font-weight:bold}
+header{width:100%; overflow:hidden;-webkit-box-shadow:0 4px 5px rgba(102,102,102,0.8);-khtml-box-shadow:0 4px 5px rgba(102,102,102,0.8);-moz-box-shadow:0 4px 5px rgba(102,102,102,0.8);-ms-box-shadow:0 4px 5px rgba(102,102,102,0.8);-o-box-shadow:0 4px 5px rgba(102,102,102,0.8); box-shadow:0 4px 5px rgba(102,102,102,0.8); }
+.header{height:50px; background:url(../images/top-bg.png) repeat-x;}
+.logo{padding:.5em 1em; width:200px; vertical-align:middle;  background:#fff;}
+.project-title{color:#fff; display:inline-block; padding:0 1em; height:50px; line-height:50px; font-size:20px; vertical-align:middle; background: #00c0f3;background: -moz-linear-gradient(left,  #00c0f3 0%, #472585 100%);background: -webkit-linear-gradient(left,  #00c0f3 0%,#472585 100%);background: linear-gradient(to right,  #00c0f3 0%,#472585 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0f3', endColorstr='#472585',GradientType=1 );} 
+.project-title:before {content: "";position: absolute; left:428px;bottom: 0;width: 0;height: 0;border-left: 11px solid #472585;border-top: 25px solid transparent;border-bottom: 25px solid transparent;}
+main{margin-top:.5em; margin-bottom:12em;}
+hr {background-image:linear-gradient(to right, rgba(0,0,0,0), #c5c5c5,rgba(0,0,0,0))!important;border:0;height:1px;}
+
+.bg-line{position:absolute; width:90%; height:2px; margin-top:21px;background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );}
+.title-shape {width: calc(100% - 4px);height: 40px; font-size:16px; text-align:center;color:#fff;padding:10px 0;position: relative;background: #472585;background: -moz-linear-gradient(left,  #472585 0%, #0b69b7 50%, #472585 100%);background: -webkit-linear-gradient(left,  #472585 0%,#0b69b7 50%,#472585 100%);background: linear-gradient(to right,  #472585 0%,#0b69b7 50%,#472585 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#472585', endColorstr='#472585',GradientType=1 );margin:0 auto;top: -8px; font-weight: normal;}
+.title-shape:after {content: "";position: absolute;left: -10px;bottom: 0;width: 0;height: 0;border-right: 10px solid #472585;border-top: 20px solid transparent;border-bottom: 20px solid transparent; z-index:1;}
+.title-shape:before {content: "";position: absolute;right: -10px;bottom: 0;width: 0;height: 0;border-left: 10px solid #472585;border-top: 20px solid transparent;border-bottom: 20px solid transparent;}
+
+.title-shape-border{width:calc(50% - 40px);height: 44px;text-align:center;color:#fff;padding:10px 0;position: relative;background:#fff;margin:0 auto;}
+.title-shape-border:after {content: "";position: absolute;left: -10px;bottom: 0;width: 0;height: 0;border-right: 10px solid #fff;border-top: 22px solid transparent;border-bottom: 22px solid transparent;}
+.title-shape-border:before {content: "";position: absolute;right: -10px;bottom: 0;width: 0;height: 0;border-left: 10px solid #fff;border-top: 22px solid transparent;border-bottom: 22px solid transparent;}
+
+
+
+/*****************************Progress Bar*****************************/
+.progress-container{width:100%; display:block; text-align:center; padding:1em 10em .1em 10em;}
+.progress-bar{background:#feb803; line-height:15px;}
+.progress {height:15px; margin-bottom:10px; border-radius:10px;}
+
+/*****************************CENTER CONTENT TAB CSS*****************************/
+
+/***Form Floating Label***/
+.control-label {pointer-events:none; color:rgba(0,0,0,.8); cursor:text; font-size:14px; line-height:0.8; margin:0; padding:10px; top:0; position:absolute; left:0; display:inline-block; font-weight:400; margin:0; max-width:100%; white-space:nowrap; -webkit-transform-origin:0 0; transform-origin:0 0; -webkit-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:color, -webkit-transform; transition-property:color, -webkit-transform; transition-property:color, transform; transition-property:color, transform, -webkit-transform; -webkit-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}
+.form-group [class*="col-"] .control-label {left:16px;}
+.form-group.control-focus .control-label, .form-group.control-highlight .control-label {-webkit-transform:scale(0.9, 0.86) translateX(-10px) translateY(-25px); transform:scale(0.9, 0.86) translateX(-10px) translateY(-25px);}
+.form-group.control-focus .control-label {color:#472585;}
+.form-group {margin-top:1em; position:relative;}
+.form-group .form-control {z-index:0;}
+.form-group .form-control::-webkit-input-placeholder,.form-group .form-control::-moz-placeholder,.form-group .form-control:-ms-input-placeholder,.form-group .form-control::placeholder {color:transparent;}
+legend + .form-group {margin-top:12px;}
+.form-control {background:#fff; cursor:pointer; width:100%; height:30px; padding:0px 0px -10px 10px; color:rgba(0, 0, 0, 0.87);  border-radius:0; border:1px solid #ccc; -webkit-box-shadow:0; box-shadow:0; -webkit-transition:0; -o-transition:0; transition:0;}
+.form-control:-webkit-autofill,.form-control:-webkit-autofill:hover,.form-control:-webkit-autofill:focus .form-control:-webkit-autofill {background-color:#fff !important; background-image:none; color:#97291e; -webkit-text-fill-color:#97291e; -webkit-box-shadow:0; transition:background-color 5000s ease-in-out 0s;}
+.form-control, .form-control:focus {box-shadow:0 0 0px transparent !important;}
+.form-control:focus {border-color:#472585; border-bottom-width:2px; outline:0; box-shadow:0 0 0 !important; -webkit-box-shadow:0 0 0 !important;}
+.form-control:focus:invalid {border-color:#472585; border-bottom-width:2px;}
+.form-control::-webkit-input-placeholder,.form-control::-moz-placeholder,.form-control:-ms-input-placeholder,.form-control::placeholder {color:transparent !important;}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {border-style:double; background-color:rgba(71, 37, 133, .1); color:rgba(0, 0, 0, 0.38); cursor:not-allowed; opacity:1;}
+.control-highlight label{color:rgba(51, 51, 51, 1); font-weight:bold;}
+.table-fields{border:1px solid #ccc !important; height:26px; padding-left:.5em; background:#fff;}
+.radio {margin:5px 0;display:inline-block;cursor:pointer;width:40%;}
+.radio input {display:none;}
+.radio input + span {line-height:22px;height:22px;padding-left:22px;display:block;position:relative;}
+.radio input + span:not(:empty) {padding-left:30px;}
+.radio input + span:before, .radio input + span:after {content:"";width:22px;height:22px;display:block;border-radius:50%;left:0;top:0;position:absolute;}
+.radio input + span:before {background: #efefef;transition:background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);transition:background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);transition:background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);}
+.radio input + span:after {background: #6a5099;-webkit-transform:scale(0.78);transform:scale(0.78);transition:-webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);transition:transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);transition:transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4), -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);}
+.radio input:checked + span:before {-webkit-transform:scale(1.04);transform:scale(1.04);background: #d6d6d6;border: 2px solid #472585;}
+.radio input:checked + span:after {-webkit-transform:scale(0.4);transform:scale(0.4);transition:-webkit-transform 0.3s ease;transition:transform 0.3s ease;transition:transform 0.3s ease, -webkit-transform 0.3s ease;}
+.radio:hover input + span:before {-webkit-transform:scale(0.92);transform:scale(0.92);}
+.radio:hover input + span:after {-webkit-transform:scale(0.74);transform:scale(0.74);}
+.radio:hover input:checked + span:after {-webkit-transform:scale(0.4);transform:scale(0.4);}
+.radio-label{display:block; text-transform:uppercase; margin-top:-1em; font-size:14px;}
+.form-control-textarea{height:30px !important; padding:0 5px; resize: none;}
+.required{color:red}
+
+.control {display:inline-block;position:relative;	padding-left:30px;margin-bottom:5px;margin-top:2px;padding-top:3px;cursor:pointer; margin-right:10px;}
+.control input{position:absolute; z-index:-1;opacity:0;}
+.control_indicator {position:absolute;top:2px;left:0;height:20px;width:20px;background:#e5e2ec;border:0px;border-radius:0px;}
+.control:hover input ~ .control_indicator,.control input:focus ~ .control_indicator {background:#cccccc;}
+.control input:checked ~ .control_indicator {background: #6a5099;}
+.control:hover input:not([disabled]):checked ~ .control_indicator,.control input:checked:focus ~ .control_indicator {background:#0e6647d;}
+.control input:disabled ~ .control_indicator {background:#e6e6e6;opacity:0.6;	pointer-events:none;}
+.control_indicator:after {box-sizing:unset;content:'';position:absolute;display:none;}
+.control input:checked ~ .control_indicator:after {display:block;}
+.control-checkbox .control_indicator:after {left:8px;top:4px;width:3px;height:8px;border:solid #ffffff;border-width:0 2px 2px 0;transform:rotate(45deg);}
+.control-checkbox input:disabled ~ .control_indicator:after {border-color:#7b7b7b;}
+.control-checkbox .control_indicator::before {content:'';display:block;position:absolute;left:0;top:0;width:4.5rem;height:4.5rem;	margin-left:-1.3rem;margin-top:-1.3rem;/* background:#2aa1c0; */	border-radius:3rem;opacity:0.6;	z-index:99999;transform:scale(0);}
+@keyframes s-ripple {0% {transform:scale(0);}20% {transform:scale(1);}100% {opacity:0;transform:scale(1);}}
+@keyframes s-ripple-dup {0% {transform:scale(0);}30% {transform:scale(1);}60% {transform:scale(1);}100% {opacity:0;transform:scale(1);}}
+.control-checkbox input + .control_indicator::before {/* animation:s-ripple 250ms ease-out; */}
+.control-checkbox input:checked + .control_indicator::before {animation-name:s-ripple-dup;}
+
+/*File Upload CSS*/
+.js .inputfile {width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1;}
+.no-js .inputfile + label {display: none;}
+.inputfile:focus + label,.inputfile.has-focus + label {outline: 1px dotted #000; outline: -webkit-focus-ring-color auto 5px;}
+.inputfile + label * {pointer-events: none; /* in case of FastClick lib use */}
+.inputfile + label svg {width: 1em; height: 1em; vertical-align: middle; fill: currentColor; margin-top: -0.25em; /* 4px */ margin-right: 0.25em; /* 4px */}
+.inputfile-upload + label {font-weight: normal;}
+.inputfile-upload + label {/* border: 1px solid rgba(244, 133, 142, 0.5); *//* background-color: rgba(251, 205, 166, .5); */padding: 0;width: 100%;}
+.inputfile-upload:focus + label,.inputfile-upload.has-focus + label,.inputfile-upload + label:hover {border-color: rgba(244, 133, 142, 0.5);}
+.inputfile-upload + label span,.inputfile-upload + label strong {padding: 4px 10px; /* 10px 20px */}
+.inputfile-upload + label span {width: auto; display: inline-block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; vertical-align: top;}
+.inputfile-upload + label strong {height: 100%; color:#444; font-weight:normal; background:#feb803; display: inline-block; float: right;}
+.inputfile-upload:focus + label strong,.inputfile-upload.has-focus + label strong,.inputfile-upload + label:hover strong {}
+@media screen and (max-width: 50em) {
+.inputfile-upload + label strong {display: block;}
+}
+
+
+/*DATATABLE CSS*/
+.datatable-table-container{width:100%; margin:0 auto; font-size:14px;}
+div.dataTables_wrapper{margin-bottom:2em !important; font-size:100%;}
+.data-table{-moz-box-shadow:0 5px 8px 0 rgba(0,0,0,0.4); -webkit-box-shadow:0 5px 8px 0 rgba(0,0,0,0.4); box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);}
+.data-table thead {color:#fff; background: #00c0f3;background: -moz-linear-gradient(left,  #00c0f3 0%, #472585 100%);background: -webkit-linear-gradient(left,  #00c0f3 0%,#472585 100%);background: linear-gradient(to right,  #00c0f3 0%,#472585 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0f3', endColorstr='#472585',GradientType=1 );}
+table.data-table.no-footer{border-bottom:0px;}
+table.dataTable thead th, table.dataTable thead td{border-bottom:2px solid #fff;}
+.data-table th{text-align:center; font-weight:bold;}
+.data-table td, .data-table th{height:30px; line-height:12px; vertical-align:middle !important;padding:0 5px;}
+.pagination > li > a, .pagination > li > span{color:#333;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{background-color:#053c6d; color:#fff;}
+
+/*table with horizontal scroll*/
+.table th{text-align:center;min-width:150px;}
+.table td{height:40px}
+.table thead{background: #00c0f3;background: -moz-linear-gradient(left,  #00c0f3 0%, #472585 100%);background: -webkit-linear-gradient(left,  #00c0f3 0%,#472585 100%);background: linear-gradient(to right,  #00c0f3 0%,#472585 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0f3', endColorstr='#472585',GradientType=1 );}
+.table>tbody>tr>td {vertical-align:middle !important;}
+.fixed-height{max-height:300px; overflow-y:auto !important; overflow-x:hidden; margin-bottom:2em; -webkit-box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
+.scrolling-table {width:100%; overflow-x:auto;overflow-y:visible; -webkit-box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
+/*table with horizontal scroll ends*/
+.table{background:rgba(209, 207, 186, .5); overflow:auto; width:99.99%;  float:left;  position:relative; margin-bottom:0px;}
+.table td{border:1px solid #fff;}
+.table > thead > tr > th{ color:#fff; font-size:14px;}
+/* width */
+::-webkit-scrollbar {width:10px; height:10px}
+/* Track */
+::-webkit-scrollbar-track {background:#d6d6d6;}
+/* Handle */
+::-webkit-scrollbar-thumb {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#472585+0,0b69b7+100 */
+background: rgb(71,37,133); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(71,37,133,1) 0%, rgba(11,105,183,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(71,37,133,1) 0%,rgba(11,105,183,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(71,37,133,1) 0%,rgba(11,105,183,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#472585', endColorstr='#0b69b7',GradientType=0 ); /* IE6-9 */
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background:rgba(71,37,133,1);}
+/*Button CSS*/
+.add-row{float:right; display:inline-block; height:30px; border:0;  width:30px; text-align:center; font-size:28px;  margin:-1em 0em 1em 0; background:#472585; color:#fff; padding-bottom: 7px;}
+.add-row:hover{background:#feb803; color:#444;}
+.btn{background:#feb803; color:#444; min-width:65px; font-size:14px; padding:0 5px; margin:2px 5px; border-radius:0; border:1px solid #fff;-webkit-box-shadow:0 4px 5px rgba(102,102,102,0.8);-khtml-box-shadow:0 4px 5px rgba(102,102,102,0.8);-moz-box-shadow:0 4px 5px rgba(102,102,102,0.8);-ms-box-shadow:0 4px 5px rgba(102,102,102,0.8);-o-box-shadow:0 4px 5px rgba(102,102,102,0.8); box-shadow:0 4px 5px rgba(102,102,102,0.8); }
+.btn:hover, .btn:active{background:#472585; color:#fff;}
+.btn-icon{background:none; border:none; color:#472585; font-size:18px; margin:0 5px;}
+.btn-icon:hover{color:#feb803;}
+
+
+/******************************** Customized CSS*****************************************/
+
+/*******************************
+	* Does not work properly if "in" is added after "collapse".
+	* Get free snippets on bootpen.com
+*******************************/
+.panel{border:0px;}
+.panel-group{margin:12px 0}
+.panel-group .panel {border-radius:0;box-shadow:none;background:transparent;}
+.content-box, .panel-body{background:rgba(255, 255, 255, 0.8); margin-top:1em; -webkit-box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);-webkit-transition:all 0.4s ease;transition:all 0.4s ease; margin-bottom:1em;}
+.content-box{padding:0em 1em;}
+
+/*FOOTER CSS*/
+footer{position:fixed; z-index:9; display:block; bottom:0; left:0; width:100%;background: #472585;background: -moz-linear-gradient(left,  #472585 0%, #0b69b7 50%, #472585 100%);background: -webkit-linear-gradient(left,  #472585 0%,#0b69b7 50%,#472585 100%);background: linear-gradient(to right,  #472585 0%,#0b69b7 50%,#472585 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#472585', endColorstr='#472585',GradientType=1 ); height:20px; color:#fff; font-size:9px; line-height:20px; padding-left:5px;}
+
+
+/*LOADER CSS*/
+.loading{position:absolute;left:50%;top:50%;z-index:2;padding:20px;margin-left:-80px;width:200px;color:#000}
+.mask{position:fixed;display:block;left:0;top:0;right:0;bottom:0;height:100%;z-index:9999;background-color:rgba(0,0,0,.5)}
+.cssload-loader{position:fixed;top:47%;left:0;right:0;margin:0 auto;width:29px;height:29px;border:4px solid #ffffff;z-index:9999;animation:cssload-loader 2.3s infinite ease;-o-animation:cssload-loader 2.3s infinite ease;-ms-animation:cssload-loader 2.3s infinite ease;-webkit-animation:cssload-loader 2.3s infinite ease;-moz-animation:cssload-loader 2.3s infinite ease}
+.field-loader .cssload-loader{position:relative;top:auto;left:auto;right:auto;margin:auto;width:10px;height:10px;border:1px solid #917bb9;z-index:9999;animation:cssload-loader 2.3s infinite ease;-o-animation:cssload-loader 2.3s infinite ease;-ms-animation:cssload-loader 2.3s infinite ease;-webkit-animation:cssload-loader 2.3s infinite ease;-moz-animation:cssload-loader 2.3s infinite ease}
+.cssload-loader-inner{vertical-align:top;display:inline-block;width:100%;background-color:#472585;animation:cssload-loader-inner 2.3s infinite ease-in;-o-animation:cssload-loader-inner 2.3s infinite ease-in;-ms-animation:cssload-loader-inner 2.3s infinite ease-in;-webkit-animation:cssload-loader-inner 2.3s infinite ease-in;-moz-animation:cssload-loader-inner 2.3s infinite ease-in}
+.processRequest{position:fixed;left:0;color:#fff;z-index:9999;font-size:14px;right:0;text-align:center}
+@keyframes cssload-loader{  0%{transform:rotate(0)}
+    25%,50%{transform:rotate(180deg)}
+    100%,75%{transform:rotate(360deg)}
+}
+@-o-keyframes cssload-loader{  0%{transform:rotate(0)}
+    25%,50%{transform:rotate(180deg)}
+    100%,75%{transform:rotate(360deg)}
+}
+@-ms-keyframes cssload-loader{  0%{transform:rotate(0)}
+    25%,50%{transform:rotate(180deg)}
+    100%,75%{transform:rotate(360deg)}
+}
+@-webkit-keyframes cssload-loader{  0%{transform:rotate(0)}
+    25%,50%{transform:rotate(180deg)}
+    100%,75%{transform:rotate(360deg)}
+}
+@-moz-keyframes cssload-loader{  0%{transform:rotate(0)}
+    25%,50%{transform:rotate(180deg)}
+    100%,75%{transform:rotate(360deg)}
+}
+.flip-container,.flipper{-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d}
+@keyframes cssload-loader-inner{  0%,100%,25%{height:0%}
+    50%,75%{height:100%}
+}
+@-o-keyframes cssload-loader-inner{  0%,100%,25%{height:0%}
+    50%,75%{height:100%}
+}
+@-ms-keyframes cssload-loader-inner{  0%,100%,25%{height:0%}
+    50%,75%{height:100%}
+}
+@-webkit-keyframes cssload-loader-inner{  0%,100%,25%{height:0%}
+    50%,75%{height:100%}
+}
+@-moz-keyframes cssload-loader-inner{  0%,100%,25%{height:0%}
+    50%,75%{height:100%}
+}
+/*DROP DOWN SELECT OPTION CSS*/
+/*Select2*/
+.select2-container--default .select2-selection--single{border:1px solid #ccc;border-radius: 0;}
+.select2-container .select2-selection--single{height: 30px !important;}
+.select2-container--default .select2-selection--single .select2-selection__rendered{line-height: 30px !important;font-size: 14px;}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color: #472585 transparent transparent transparent !important; top:50% !important;}
+.select2-dropdown{border:1px solid rgba(249, 168, 36, .3) !important;}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{color: #333;}
+.select2-container--default .select2-results__option[aria-selected=true],.select2-container--default .select2-results__option[aria-selected=true]:hover{color:#484848;}
+
+
+/*DATEPICKER CSS*/
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused{background:#472585;}
+.datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover{background:#472585;}
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active[disabled], .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active.disabled:hover[disabled]{background-color:#472585;}
+.datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active{background-color:#472585;}
+
+/*Tooltip CSS*/
+.tooltip .tooltip-inner{background-color:#462586;}
+.tooltip.top .tooltip-arrow{border-top-color: #462586;}
+.tooltip.right .tooltip-arrow{border-right-color: #462586;}
+.tooltip.bottom .tooltip-arrow{border-bottom-color:#462586;}
+.tooltip.left .tooltip-arrow{border-left-color:#462586;}
+
+.input-group-addon{padding:3px 5px;}
